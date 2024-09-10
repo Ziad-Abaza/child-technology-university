@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة دخول الأطفال</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <div id="loader">
+            <img src="logo.png"  class="loader-image" alt="logo">
+        </div>
+    <div id="app" class="container">
+        <div class="login-panel animate__animated animate__fadeInUp">
+            <h2 class="animate__animated animate__bounceIn">الرجاء إدخال الرقم التعريفي</h2>
+            <input v-model="userId" type="text" class="input animate__animated animate__fadeIn"
+                placeholder="الرقم التعريفي">
+            <button @click="login" class="button animate__animated animate__pulse">تسجيل الدخول</button>
+        </div>
+
+        <div v-if="falseId" class="animate__animated animate__shakeX">
+            <p class="alert">الرقم التعريفي غير صحيح، الرجاء المحاولة مرة أخرى.</p>
+        </div>
+
+        <div class="card animate__animated animate__fadeIn" v-if="student">
+            <div class="card-header">
+                <h2 class="animate__animated animate__zoomIn">{{ student.name }}</h2>
+            </div>
+            <div class="card-content">
+                <div class="detail animate__animated animate__fadeInUp">
+                    <span class="detail-label">الصف:</span>
+                    <span class="detail-value">{{ student.class }}</span>
+                </div>
+                <div class="detail animate__animated animate__fadeInUp">
+                    <span class="detail-label">درجة التسليم:</span>
+                    <span class="detail-value">{{ student.tasks }}</span>
+                </div>
+                <div class="detail animate__animated animate__fadeInUp">
+                    <span class="detail-label">درجة الالتزام والحضور:</span>
+                    <span class="detail-value">{{ student.attendance }}</span>
+                </div>
+                <div class="detail animate__animated animate__fadeInUp">
+                    <span class="detail-label">درجة المشاركة في المشروع:</span>
+                    <span class="detail-value">{{ student.project }}</span>
+                </div>
+                <div class="detail animate__animated animate__fadeInUp">
+                    <span class="detail-label">درجة الإبداع والتميز:</span>
+                    <span class="detail-value">{{ student.creativity }}</span>
+                </div>
+                <div class="detail animate__animated animate__fadeInUp">
+                    <span class="detail-label">درجة السلوك:</span>
+                    <span class="detail-value">{{ student.behavior }}</span>
+                </div>
+                <div class="detail animate__animated animate__fadeInUp">
+                    <span class="detail-label">نسبة المجموع:</span>
+                    <span class="detail-value">{{ student.total }}</span>
+                </div>
+                <div class="detail animate__animated animate__fadeInUp">
+                    <span class="detail-label">التقييم النهائي:</span>
+                    <span class="detail-value">{{ student.evaluation }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vue.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

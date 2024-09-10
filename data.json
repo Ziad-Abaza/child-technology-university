@@ -1,0 +1,80 @@
+[
+    {
+        "id": "123456",
+        "name": "Mohamed Ahmed",
+        "age": 10,
+        "class": "A2",
+        "tasks": 15,
+        "attendance": 18,
+        "project": 17,
+        "creativity": 19,
+        "behavior": 20,
+        "total": "89%",
+        "evaluation": "Excellent"
+    },
+    {
+        "id": "654321",
+        "name": "Ali Khalid",
+        "age": 11,
+        "class": "A2",
+        "tasks": 16,
+        "attendance": 17,
+        "project": 15,
+        "creativity": 14,
+        "behavior": 16,
+        "total": "78%",
+        "evaluation": "Very Good"
+    },
+    {
+        "id": "789456",
+        "name": "Sara Mahmoud",
+        "age": 9,
+        "class": "B2",
+        "tasks": 18,
+        "attendance": 20,
+        "project": 19,
+        "creativity": 20,
+        "behavior": 18,
+        "total": "95%",
+        "evaluation": "Excellent"
+    },
+    {
+        "id": "234567",
+        "name": "Omar Youssef",
+        "age": 12,
+        "class": "C1",
+        "tasks": 14,
+        "attendance": 15,
+        "project": 16,
+        "creativity": 17,
+        "behavior": 15,
+        "total": "77%",
+        "evaluation": "Good"
+    },
+    {
+        "id": "345678",
+        "name": "Layla Ahmed",
+        "age": 13,
+        "class": "D1",
+        "tasks": 19,
+        "attendance": 18,
+        "project": 20,
+        "creativity": 19,
+        "behavior": 17,
+        "total": "93%",
+        "evaluation": "Excellent"
+    },
+    {
+        "id": "456789",
+        "name": "Khaled Anwar",
+        "age": 14,
+        "class": "B1",
+        "tasks": 12,
+        "attendance": 14,
+        "project": 13,
+        "creativity": 15,
+        "behavior": 14,
+        "total": "68%",
+        "evaluation": "Acceptable"
+    }
+]
