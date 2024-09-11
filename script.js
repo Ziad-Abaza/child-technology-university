@@ -14,8 +14,10 @@ new Vue({
       });
     
     window.addEventListener("load", () => {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("app").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("app").style.display = "block";
+      }, 5000); 
     });
 
   },
